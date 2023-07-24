@@ -1,0 +1,118 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Prevent scrollbars */
+  }
+  
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #101010, #4E4FEB);
+    z-index: -1;
+  }
+  
+  
+
+.container{
+
+    width: 500px;
+    height: auto;
+    background:linear-gradient(#068FFF, #EEEEEE);
+    padding: 10px;
+    margin: 120px auto;
+    border: 1px solid black;
+    border-radius: 1ex;
+    text-align: center;
+    box-shadow: 10px 11px 6px -2px rgba(31,160,226,0.6);
+    -webkit-box-shadow: 10px 11px 6px -2px rgba(31,160,226,0.6);
+    -moz-box-shadow: 10px 11px 6px -2px rgba(31,160,226,0.6);
+
+}
+
+.container h2{
+
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h2::after {
+  content: " ";
+  display: block; /* Change display to block */
+  border: 2px solid rgb(21, 31, 222);
+  width: 50%; /* Set the width to desired value, e.g., 50% of the container width */
+  margin: 10px auto 0; /* Adjust the top margin to create space below the h2 */
+}
+
+.container blockquote{
+
+  font-size: 26px;
+  min-height: 90px;
+}
+
+.container blockquote::before , .container blockquote::after {
+
+  content: '"';
+}
+
+p{
+  float: right;
+  font-style: italic;
+}
+
+p::before{
+
+  content: "━ ";
+}
+
+.container div{
+
+  width: 100%;
+  display: flex;
+  margin-top: 50px;
+  justify-content: center;
+}
+
+.container div button{
+
+  padding: 10px;
+  border-radius: 5em;
+  margin: 5px;
+  border: none;
+  outline: none;
+  display: flex;
+  align-items: center;
+  background-color: #068FFF;
+  justify-content: center;
+  height: 40px;
+  width: 100px;
+  color: white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.container div button:nth-child(2){
+
+  background-color: transparent;
+  border: 1px solid rgb(10, 131, 223);
+  color: #101010;
+}
+
+.container div button:hover{
+  
+  background-color: #101010;
+  color: white;
+
+}
+
+img{
+  height: 20px;
+  width: auto;
+  margin-left: 10px;
+}
+
